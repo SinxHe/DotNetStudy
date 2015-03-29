@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N01控制台", "N01控制台\N01控制台.csproj", "{C4944EE5-6A41-4691-9369-1954B2671205}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N01正则表达式", "N01控制台\N01正则表达式.csproj", "{C4944EE5-6A41-4691-9369-1954B2671205}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N02匿名方法和lambda表达式", "N02匿名方法和lambda表达式\N02匿名方法和lambda表达式.csproj", "{8B9A3D7C-7B93-408A-AF4C-2CF7A180A9CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C4944EE5-6A41-4691-9369-1954B2671205}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4944EE5-6A41-4691-9369-1954B2671205}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4944EE5-6A41-4691-9369-1954B2671205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9A3D7C-7B93-408A-AF4C-2CF7A180A9CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9A3D7C-7B93-408A-AF4C-2CF7A180A9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9A3D7C-7B93-408A-AF4C-2CF7A180A9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9A3D7C-7B93-408A-AF4C-2CF7A180A9CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
