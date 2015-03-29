@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N04拓展方法", "N04拓�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N05委托和事件", "N05委托和事件\N05委托和事件.csproj", "{73F39792-8F08-4056-9EDA-5C3C425A5A50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N00基础知识", "N00基础知识\N00基础知识.csproj", "{9C7F0EC4-E491-4965-A628-70296D1881D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{73F39792-8F08-4056-9EDA-5C3C425A5A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73F39792-8F08-4056-9EDA-5C3C425A5A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73F39792-8F08-4056-9EDA-5C3C425A5A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7F0EC4-E491-4965-A628-70296D1881D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7F0EC4-E491-4965-A628-70296D1881D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7F0EC4-E491-4965-A628-70296D1881D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7F0EC4-E491-4965-A628-70296D1881D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
