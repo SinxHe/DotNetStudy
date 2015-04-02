@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N06程序集和反射", "N0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N06程序集DLL", "N06程序集DLL\N06程序集DLL.csproj", "{C904D199-9F8F-40AF-BBDA-4426107ECB28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N07XML", "N07XML\N07XML.csproj", "{4FCB59C7-9730-435A-A400-239944F70F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N08深拷贝和浅拷贝", "N08深拷贝和浅拷贝\N08深拷贝和浅拷贝.csproj", "{F762123D-B8CD-4DDE-B477-B6E13811875D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{C904D199-9F8F-40AF-BBDA-4426107ECB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C904D199-9F8F-40AF-BBDA-4426107ECB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C904D199-9F8F-40AF-BBDA-4426107ECB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FCB59C7-9730-435A-A400-239944F70F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCB59C7-9730-435A-A400-239944F70F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCB59C7-9730-435A-A400-239944F70F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCB59C7-9730-435A-A400-239944F70F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F762123D-B8CD-4DDE-B477-B6E13811875D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F762123D-B8CD-4DDE-B477-B6E13811875D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F762123D-B8CD-4DDE-B477-B6E13811875D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F762123D-B8CD-4DDE-B477-B6E13811875D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
