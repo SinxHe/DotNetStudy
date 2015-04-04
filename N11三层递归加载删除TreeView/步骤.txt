@@ -1,0 +1,23 @@
+﻿2015-4-3 21:14:07
+1.	需求分析 SQL
+	1.	加载T_AreaFull中的数据到TreeView
+		1.	字段:	[AreaId], [AreaName], [AreaPid]
+		2.	SQL:	select * from T_AreaFull where AreaPid = @Pid
+		3.	DAL:	public List<T_AreaFullModel> GetAreaByPid(int pid)
+			1.	参数: 
+			2.	返回值: 
+		4.	BLL:	public List<T_AreaFullModel> GetAreaByPid(int pid)
+		5.	UI:		递归加载的逻辑应该放在UI层, 因为要用到跟Form控件相关的集合, 放到业务逻辑层的话, 将来将业务逻辑层放到web平台会出错! 但是UI层不能访问DAL层, 所以BLL层有了一个酱油方法;
+	2.	删除T_AreaFull中的数据
+		1.	字段: 
+		2.	SQL:	删除指定AreaId的节点和其所有子节点 delete from T_AreaFull where AreaId = @AreaId
+		3.	DAL:	public int DeleteAreaByAreaId(int areaId)
+		4.	BLL:	
+			1.	根据AreaId得到一个Area
+			2.	查询他的所有子节点
+			3.	从子节点开始删除
+		5.	UI:
+			1.	先判断用户有没有选中节点
+			2.	执行删除操作
+				1.	从数据库删除
+				2.	从界面删除
