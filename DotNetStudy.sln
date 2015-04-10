@@ -35,6 +35,39 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N12三层Student之增删�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N13三层话术管理器", "N13三层话术管理器\N13三层话术管理器.csproj", "{3EB57019-B1BF-44CF-9EC4-238CE6287628}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N14三层代码生成器And发邮件", "N14三层代码生成器And发邮件\N14三层代码生成器And发邮件.csproj", "{AA438B44-1C80-4A5B-8296-16ECAC77F250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N15多线程", "N15多线程\N15多线程.csproj", "{6DE66CAF-D11C-4129-B8A2-EA710ED4F36C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N16SocketAnd聊天程序", "N16SocketAnd聊天程序\N16SocketAnd聊天程序.csproj", "{F8251454-C3E7-4CCE-B2EE-185F1EBC8B79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N17IIS服务器", "N17IIS服务器\N17IIS服务器.csproj", "{99C4569D-2110-42D7-92BB-D335CF907D0F}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "N18一般处理程序基础", "http://localhost:57058", "{A9CFB171-54B9-4A0D-9974-1AEFE6CBFAE2}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N19上传文件", "N19上传文件\N19上传文件.csproj", "{008C076B-9A77-4466-8097-455F5D36D13F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +138,30 @@ Global
 		{3EB57019-B1BF-44CF-9EC4-238CE6287628}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EB57019-B1BF-44CF-9EC4-238CE6287628}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EB57019-B1BF-44CF-9EC4-238CE6287628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA438B44-1C80-4A5B-8296-16ECAC77F250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA438B44-1C80-4A5B-8296-16ECAC77F250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA438B44-1C80-4A5B-8296-16ECAC77F250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA438B44-1C80-4A5B-8296-16ECAC77F250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE66CAF-D11C-4129-B8A2-EA710ED4F36C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE66CAF-D11C-4129-B8A2-EA710ED4F36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE66CAF-D11C-4129-B8A2-EA710ED4F36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE66CAF-D11C-4129-B8A2-EA710ED4F36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8251454-C3E7-4CCE-B2EE-185F1EBC8B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8251454-C3E7-4CCE-B2EE-185F1EBC8B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8251454-C3E7-4CCE-B2EE-185F1EBC8B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8251454-C3E7-4CCE-B2EE-185F1EBC8B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C4569D-2110-42D7-92BB-D335CF907D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C4569D-2110-42D7-92BB-D335CF907D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C4569D-2110-42D7-92BB-D335CF907D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C4569D-2110-42D7-92BB-D335CF907D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CFB171-54B9-4A0D-9974-1AEFE6CBFAE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CFB171-54B9-4A0D-9974-1AEFE6CBFAE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CFB171-54B9-4A0D-9974-1AEFE6CBFAE2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CFB171-54B9-4A0D-9974-1AEFE6CBFAE2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{008C076B-9A77-4466-8097-455F5D36D13F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008C076B-9A77-4466-8097-455F5D36D13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008C076B-9A77-4466-8097-455F5D36D13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008C076B-9A77-4466-8097-455F5D36D13F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
