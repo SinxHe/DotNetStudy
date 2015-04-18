@@ -21,7 +21,7 @@ namespace N10三层架构.DAL
         public int UpdateEmailByName(string name, string email)
         {
             string SqlString = "UPDATE T_Persons SET Email = @Email WHERE Name = @Name";
-            int num = Heab.SQL.SqlHelper.ExecuteNonQuery(SqlString, 
+            int num = Heab.SQL.SQLHelper.ExecuteNonQuery(SqlString, 
                 new SqlParameter("@Email", email),
                 new SqlParameter("@Name", name));
             return num;

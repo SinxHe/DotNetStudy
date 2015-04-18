@@ -27,14 +27,14 @@ namespace N12三层Student之增删改查.DAL
                 new SqlParameter("@ClassId", s.t_ClassModel.Id),
                 new SqlParameter("@Birthday", s.Birthday)
             };
-            return Heab.SQL.SqlHelper.ExecuteNonQuery(sql, sp);
+            return Heab.SQL.SQLHelper.ExecuteNonQuery(sql, sp);
         }
 
         public List<T_StudentsModel> GetAllStudents()
         {
             List<T_StudentsModel> list = new List<T_StudentsModel>();
             string sql = "select T_Students.*, T_Classes.Name as ClassName from T_Students inner join T_Classes on T_Students.Id = T_Classes.Id";
-            DataTable dt = Heab.SQL.SqlHelper.ExecuteDataTable(sql);
+            DataTable dt = Heab.SQL.SQLHelper.ExecuteDataTable(sql);
             foreach (DataRow row in dt.Rows)
             {
                 T_StudentsModel student = new T_StudentsModel();

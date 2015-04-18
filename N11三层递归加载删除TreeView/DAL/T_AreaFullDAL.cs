@@ -20,7 +20,7 @@ namespace N11三层递归加载删除TreeView.DAL
         public List<T_AreaFullModel> GetAreaByPid(int pid)
         {
             string sql = "select * from T_AreaFull where AreaPid = @Pid";
-            DataTable dt = Heab.SQL.SqlHelper.ExecuteDataTable(sql, new SqlParameter("@Pid", pid));
+            DataTable dt = Heab.SQL.SQLHelper.ExecuteDataTable(sql, new SqlParameter("@Pid", pid));
             List<T_AreaFullModel> list = new List<T_AreaFullModel>();
             foreach (DataRow item in dt.Rows)
             {
@@ -43,7 +43,7 @@ namespace N11三层递归加载删除TreeView.DAL
         public int DeleteAreaByAreaId(int areaId)
         {
             string sql = "delete from T_AreaFull where AreaId = @AreaId";
-            return Heab.SQL.SqlHelper.ExecuteNonQuery(sql, new SqlParameter("@AreaId", areaId));
+            return Heab.SQL.SQLHelper.ExecuteNonQuery(sql, new SqlParameter("@AreaId", areaId));
         }
     }
 }

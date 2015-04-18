@@ -57,7 +57,7 @@ namespace N10三层架构.BLL
             {
                 return LoginResult.UserNotExists;
             }
-            else if (user.Password == Heab.SQL.MD5.GetMD5(password))
+            else if (user.Password == Heab.SQL.Md5.GetMD5(password))
             {
                 return LoginResult.Success;
             }
@@ -77,9 +77,9 @@ namespace N10三层架构.BLL
         /// <returns>成功 重名用户 用户不存在 密码错误 新密码不一致</returns>
         public ChangePasswordResult ChangePassword(string name, string pwd, string newPwd1, string newPwd2)
         {
-            pwd = Heab.SQL.MD5.GetMD5(pwd);
-            newPwd1 = Heab.SQL.MD5.GetMD5(newPwd1);
-            newPwd2 = Heab.SQL.MD5.GetMD5(newPwd2);
+            pwd = Heab.SQL.Md5.GetMD5(pwd);
+            newPwd1 = Heab.SQL.Md5.GetMD5(newPwd1);
+            newPwd2 = Heab.SQL.Md5.GetMD5(newPwd2);
             // 1.   验证密码是否一致
             if (newPwd1 == newPwd2)
             {

@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SQL\MD5.cs" />
-    <Compile Include="SQL\SqlHelper.cs" />
+    <Compile Include="SQL\Md5.cs" />
+    <Compile Include="SQL\SQLHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
