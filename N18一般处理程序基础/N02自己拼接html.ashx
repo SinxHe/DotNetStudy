@@ -24,7 +24,7 @@ public class N02自己拼接html : IHttpHandler {
     /// <returns></returns>
     private string T_UserBLL_GetTop20()
     {
-        DataTable dt = Heab.SQL.SQLHelper.ExecuteDataTable("select top(20) * from T_User");
+        DataTable dt = Heab.SQL.SqlHelper.ExecuteDataTable("select top(20) * from T_User");
         StringBuilder sb = new StringBuilder();
         sb.Append("<table border=\"1\"><tr><th>Id</th><th>UserName</th><th>Password</th></tr>");
         foreach (DataRow row in dt.Rows)

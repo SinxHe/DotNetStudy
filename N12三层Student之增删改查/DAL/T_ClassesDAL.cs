@@ -19,7 +19,7 @@ namespace N12三层Student之增删改查.DAL
         {
             List<T_ClassesModel> list = new List<T_ClassesModel>();
             string sql = "select * from T_Classes where 1 = 1";
-            DataTable dt = Heab.SQL.SQLHelper.ExecuteDataTable(sql);
+            DataTable dt = Heab.SQL.SqlHelper.ExecuteDataTable(sql);
             foreach (DataRow item in dt.Rows)
             {
                 T_ClassesModel classInfo = new T_ClassesModel();

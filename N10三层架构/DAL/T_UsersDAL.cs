@@ -24,7 +24,7 @@ namespace N10三层架构.DAL
                                         // 如果是集合的话, 返回count是0的一个实例就行了, 因为集合是要遍历的, 返回null会报异常
 
             string sql = "select * from T_Users where Name = @Name";
-            DataTable dt = Heab.SQL.SQLHelper.ExecuteDataTable(sql, new SqlParameter("@Name", name));
+            DataTable dt = Heab.SQL.SqlHelper.ExecuteDataTable(sql, new SqlParameter("@Name", name));
 
             if (dt.Rows.Count == 1)
             {
@@ -33,7 +33,7 @@ namespace N10三层架构.DAL
                 user.Id = Convert.ToInt32(dr["Id"]);
                 user.Name = Convert.ToString(dr["Name"]);
                 user.Password = Convert.ToString(dr["Password"]);
-                user.RealName = Convert.ToString(Heab.SQL.SQLHelper.FromDbValue(dr["RealName"]));
+                user.RealName = Convert.ToString(Heab.SQL.SqlHelper.FromDbValue(dr["RealName"]));
             }
             else if (dt.Rows.Count > 1)
             {
@@ -59,7 +59,7 @@ namespace N10三层架构.DAL
                 new SqlParameter("@Name", name), 
                 new SqlParameter("@Password", pwd)
             };
-            int num = (int)Heab.SQL.SQLHelper.ExecuteScalar(sql, Params);
+            int num = (int)Heab.SQL.SqlHelper.ExecuteScalar(sql, Params);
             return num;
         }
 
@@ -72,7 +72,7 @@ namespace N10三层架构.DAL
         public int UpdatePassword(string name, string newPwd)
         {
             string sql = "update T_Users set Password = @Password where Name = @Name";
-            int num = Heab.SQL.SQLHelper.ExecuteNonQuery(sql, 
+            int num = Heab.SQL.SqlHelper.ExecuteNonQuery(sql, 
                 new SqlParameter("@Name", name),
                 new SqlParameter("@Password", newPwd));
             return num;
