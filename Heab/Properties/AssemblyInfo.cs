@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("Heab")]
-[assembly: AssemblyDescription("2015-4-2 20:53:02 最初版本, 只有一个SQLHelper##2015-4-3 12:37:01 增加MD5")]
+[assembly: AssemblyDescription("2015-4-2 20:53:02 最初版本, 只有一个SQLHelper##2015-4-3 12:37:01 增加MD5##2015-04-20 19:53:27 添加生成验证码的方法ValidateCode")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("China")]
 [assembly: AssemblyProduct("Heab")]

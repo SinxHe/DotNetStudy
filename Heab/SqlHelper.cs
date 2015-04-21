@@ -20,7 +20,7 @@ namespace Heab.SQL
     ///     2. ConnStr为null, 此时没有配置文件, 必须手动设置ConnStr
     ///     3. InvalidOperationException异常, 说明此时以上两步都不满足
     /// </summary>
-    public class SqlHelper
+    public class SQLHelper
     {
         /// <summary>
         /// 默认: 配置文件中获取连接字符串connstr, 如果配置文件中没有配置, 异常为NullReferenceException, 然后异常为TypeInitializationException, 在构造函数中已经捕获, 设置为null
@@ -28,7 +28,7 @@ namespace Heab.SQL
         /// </summary>
         public static string ConnStr;
 
-        static SqlHelper()
+        static SQLHelper()
         {
             try
             {
@@ -81,7 +81,12 @@ namespace Heab.SQL
             }
         }
 
-        // SQL操作返回一个一行一列的数据
+        /// <summary>
+        /// SQL操作返回一个一行一列的数据
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
         public static object ExecuteScalar(string sql, params SqlParameter[] parameters)
         {
             using (SqlConnection conn = new SqlConnection(ConnStr))
@@ -96,7 +101,12 @@ namespace Heab.SQL
             }
         }
 
-        // 执行查询结果比较少的SQL
+        /// <summary>
+        /// 执行查询结果比较少的SQL
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
         public static DataTable ExecuteDataTable(string sql, params SqlParameter[] parameters)
         {
             using (SqlConnection conn = new SqlConnection(ConnStr))

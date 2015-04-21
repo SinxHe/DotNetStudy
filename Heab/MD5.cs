@@ -8,8 +8,16 @@ using System.Threading.Tasks;
 
 namespace Heab.SQL
 {
+    /// <summary>
+    /// 给指定字符串MD5加密后返回
+    /// </summary>
     public static class MD5
     {
+        /// <summary>
+        /// 静态方法, 返回MD5字符串
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public static string GetMD5(string str)
         {
             MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();

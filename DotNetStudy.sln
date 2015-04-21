@@ -70,6 +70,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N19上传文件", "N19上�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N20WebForm", "N20WebForm\N20WebForm.csproj", "{68A9453A-4F55-4CF2-8EE0-A35166B0158D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N21AspDotNet对象", "N21AspDotNet对象\N21AspDotNet对象.csproj", "{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -168,6 +170,10 @@ Global
 		{68A9453A-4F55-4CF2-8EE0-A35166B0158D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A9453A-4F55-4CF2-8EE0-A35166B0158D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A9453A-4F55-4CF2-8EE0-A35166B0158D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
