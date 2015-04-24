@@ -72,6 +72,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N20WebForm", "N20WebForm\N2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N21AspDotNet对象", "N21AspDotNet对象\N21AspDotNet对象.csproj", "{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N22页面生命周期", "N22页面生命周期\N22页面生命周期.csproj", "{14EBEB25-E893-4577-B518-50697681BE3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N23异步", "N23异步\N23异步.csproj", "{FBBCF1B0-7B4C-4259-B733-AF4BFC3E2F21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -174,6 +178,14 @@ Global
 		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EBEB25-E893-4577-B518-50697681BE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EBEB25-E893-4577-B518-50697681BE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EBEB25-E893-4577-B518-50697681BE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EBEB25-E893-4577-B518-50697681BE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBBCF1B0-7B4C-4259-B733-AF4BFC3E2F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBCF1B0-7B4C-4259-B733-AF4BFC3E2F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBCF1B0-7B4C-4259-B733-AF4BFC3E2F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBCF1B0-7B4C-4259-B733-AF4BFC3E2F21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Scripts/jquery-easyui-1.3.1/themes/default/easyui.css" rel="stylesheet" />
+    <link href="Scripts/jquery-easyui-1.3.1/themes/icon.css" rel="stylesheet" />
+    <script src="Scripts/jquery-easyui-1.3.1/jquery-1.8.0.min.js"></script>
+    <script src="Scripts/jquery-easyui-1.3.1/jquery.easyui.min.js"></script>
+    <script src="Scripts/jquery-easyui-1.3.1/locale/easyui-lang-zh_CN.js"></script>
+    <script src="Scripts/datapattern.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // 初始化Table表格
+            initTbBody();
+            // 增加添加层
+            addLayer();
+            // 隐藏div
+            $("#addDiv").css("display", "none");
+            $("#divShowDetail").css("display", "none");
+            $("#divEdit").css("display", "none");
+        });
+
+        // 添加的对话框
+        function addLayer() {
+            $("#btnAdd").click(function () {
+                // 显示添加div
+                $("#addDiv").css("display", "block");
+                $("#addDiv").dialog({
+                    title: "添加对话框",
+                    width: 300,
+                    height: 300,
+                    modal: true,
+                    collapsible: true,
+                    minimizable: true,
+                    maximizable: true,
+                    resizable: true,
+                    buttons: [{
+                        text: "添加",
+                        iconCls: "icon-add",
+                        handler: subAddFrm//异步提交添加表单
+                    }, {
+                        text: "关闭",
+                        iconCls: "icon-cancel",
+                        handler: function () {
+                            $("#addDiv").dialog("close");
+                        }
+                    }]
+                });
+            });
+        }
+
+        // 异步提交整个表单
+        function subAddFrm() {
+            //拿到表单中的数据
+            //var postData = {
+            //    title: $("#txtTitle").val(),
+            //    people: $("#txtPeople").val(),
+            //    content: $("#txtContent").val()
+            //};
+
+            // 将表单数据放到一个序列化的数组中
+            var postData = $("#addFrm").serializeArray();
+            $.post("N04ProcessAdd.ashx", postData, function (data) {
+                if (data == "ok") {
+                    //关闭对话框，刷新表格数据。
+                    $("#addDiv").dialog("close");
+                    initTbBody();//刷新表格数据。
+                }
+            });
+        }
+        // 初始化表格
+        function initTbBody() {
+            $("#tbBody").html("");
+            $.getJSON("N04GetNews.ashx", "", function (data) {
+                for (var key in data) {
+                    var dateStr =//                /Date(1280802573000)/
+                    (eval(data[key].Date.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-M-d");
+
+                    $("#tbBody").append("<tr><th>" + data[key].ID + "</th><th>" + data[key].title + "</th><th>" + data[key].content + "</th><th>" + dateStr + "</th><th>" + "<a newsId = '" + data[key].ID + "' href = javascirpt:void(0)>详情</a>" + " | " + "<a newsId = '" + data[key].ID + "' href = javascirpt:void(0) class = 'aNewsEdit'>修改</a>" + "</th></tr>");
+                }
+                // 绑定点击详情的事件
+                bindDetailLinkClickEvent();
+                // 绑定点击修改的事件
+                bindEditLinkClickEvent();
+            });
+        }
+        // ---------------------------- 详情对话框 开始 --------------------
+        // 绑定点击详情的事件
+        function bindDetailLinkClickEvent() {
+            $("#tbBody a:contains('详情')").click(function () {
+                //alert("wangwang..." + $(this).attr("newsId"));
+                // 根据Id异步获取详情数据, 放到div框中
+                loadDetailDataToDiv($(this).attr("newsId"));
+
+                // 显示详情div对话框
+                showDetailDiv();
+            });
+        }
+        // 根据Id异步获取详情数据, 放到div框中
+        function loadDetailDataToDiv(newsId) {
+            $("#tblShowDetail").html("");
+            $.getJSON("N04GetNewsById.ashx", { "Id": newsId }, function (data) {
+                $("#tblShowDetail").append("<tr><td>" + data.ID + "</td></tr>").append("<tr><td>" + data.title + "</td></tr>");
+            });
+        }
+        // 显示详情div对话框
+        function showDetailDiv() {
+            $("#divShowDetail").css("display", "block");
+            // 弹出一个层, 显示详情
+            $("#divShowDetail").dialog({
+                title: "显示详情",
+                width: 300,
+                height: 300,
+                modal: true,
+                buttons: [{
+                    text: "关闭",
+                    iconCls: "icon-cancel",
+                    handler: function () {
+                        $("#divShowDetail").dialog("close");
+                    }
+                }]
+            });
+        }
+        // ---------------------------- 详情对话框 结束 --------------------
+        // ---------------------------- 修改对话框 开始 --------------------
+        function bindEditLinkClickEvent() {
+            $(".aNewsEdit").click(function () {
+                // 后台取出数据, 放到div框中
+                loadEditDataToDiv($(this).attr("newsId"));
+                //弹出对话框之前，把iframe标签的src属性设置成 修改页面地址。
+                $("#editFrame").attr("src", "N04EditNewsFrame.aspx?Id=" + $(this).attr("newsId"));
+                // 显示对话框
+                showEditDiv();
+            });
+        }
+
+        // 后台取出数据, 放到div框中
+        function loadEditDataToDiv(newsId) {
+            $.getJSON("N04GetNewsById.ashx", { Id: newsId }, function (data) {
+                $("#hidId").val(data.ID);
+                $("#txtEditTitle").text(data.ID);
+                $("#txtEditContent").val(data.title);
+            });
+        }
+        // 显示修改对话框
+        function showEditDiv() {
+            $("#divEdit").css("display", "block");
+            $("#divEdit").dialog({
+                title: "修改",
+                width: 500,
+                height: 500,
+                modal: true,
+                buttons: [{
+                    text: "修改",
+                    iconCls: "icon-edit",
+                    handler: function () {
+                        //editBtnClick();
+                        submitChildEditFrm();
+                    }
+                }, {
+                    text: "关闭",
+                    iconCls: "icon-cancel",
+                    handler: function () {
+                        $("#divEdit").dialog("close");
+                    }
+                }]
+            });
+        }
+        //提交子容器的修改表单。
+        function submitChildEditFrm() {
+            //拿到子容器的windows对象
+            var domFrame = $("#editFrame")[0];
+            domFrame.contentWindow.submitFrm();
+        }
+
+        //当修改成功之后，由子容器来调用的方法
+        function afterEditSuccess() {
+            //关闭对话框，刷新表格
+            $("#divEdit").dialog("close");
+            initTbBody();
+        }
+
+        // 修改信息
+        //function editBtnClick() {
+        //    var postData = $("#frmEdit").serializeArray();
+        //    $.get("N04UpdateNews.ashx", postData, function (data) {
+        //        if (data == "ok") {
+        //            $("#divEdit").dialog("close");
+        //            initTbBody();
+        //        } else {
+        //            $.messager.alert("添加失败", "出现了未知错误");
+        //        }
+                
+        //    });
+        //}
+        // ---------------------------- 修改对话框 结束 --------------------
+    </script>
+</head>
+<body>
+    <input id="btnAdd" type="button" value="添加" />
+    <hr />
+    <table border="1">
+        <thead>
+            <tr><th>新闻编号</th><th>新闻标题</th><th>新闻内容</th><th>日期</th><th>操作</th></tr>
+        </thead>
+        <tbody id="tbBody"></tbody>
+    </table>
+    <div id="addDiv">
+        <h1>这是添加的对话框</h1>
+        <form id="addFrm">
+            <table>
+                <tr>
+                    <td>新闻标题：</td>
+                    <td><input type="text" name="txtTitle" id="txtTitle" /></td>
+                </tr>
+                <tr>
+                    <td>新闻发布人：</td>
+                    <td><input type="text" name="txtPeople" id="txtPeople" /></td>
+                </tr>
+                <tr>
+                    <td>新闻内容：</td>
+                    <td><input type="text" name="txtContent" id="txtContent" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="divShowDetail">
+        <table id="tblShowDetail" border="1"></table>
+    </div>
+<!--<div id="divEdit">
+    <form method="post" id="frmEdit">
+        <input type="hidden" id="hidId" name="hidId"/>
+        <table border="1">
+            <tr><td>新闻ID: </td><td><span id="txtEditTitle"></span></td></tr>
+            <tr><td>新闻内容: </td><td><input type="text" name="txtEditContent" id="txtEditContent"/></td></tr>
+        </table>
+    </form>
+</div>-->
+<div id="divEdit">
+    <iframe src="javascript:void(0)" id="editFrame" width="100%" height="100%" frameborder="1"></iframe>
+</div>
+</body>
+</html>

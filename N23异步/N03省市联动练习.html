@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            initPro();
+        });
+
+        // 异步获取省的信息
+        function initPro() {
+            $.get("N03Pro.ashx", "", function (data) {
+                $("#selPro").html(data);
+                // 获取完省的信息绑定选择事件
+                bindSelectChangeEvent();
+                // 然后选择默认的城市列出来
+                $("#selPro").change();
+            });
+        }
+
+        // 绑定省市选择事件
+        function bindSelectChangeEvent() {
+            $("#selPro").change(function() {
+                // 拿到选中的省的Id
+                var pId = $(this).val();
+                // 异步获取特定省的城市, 放到指定标签中
+                $.get("N03LoadProvinceCitiesByProId.ashx", { pId: pId }, function (data) {
+                    $("#selCity").empty();
+                    data = $.parseJSON(data);
+                    for (var key in data) {
+                        $("#selCity").append("<option value='" + data[key].cityId +"'>" + data[key].cityName + "</option>");
+                    }
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <select id="selPro"></select>
+    <select id="selCity"></select>
+</body>
+</html>
