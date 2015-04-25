@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="N04Pager.css" rel="stylesheet" />
     <link href="Scripts/jquery-easyui-1.3.1/themes/default/easyui.css" rel="stylesheet" />
     <link href="Scripts/jquery-easyui-1.3.1/themes/icon.css" rel="stylesheet" />
     <script src="Scripts/jquery-easyui-1.3.1/jquery-1.8.0.min.js"></script>
@@ -69,22 +70,37 @@
                 }
             });
         }
-        // 初始化表格
-        function initTbBody() {
+        // 初始化表格 加载分页标签
+        function initTbBody(dataGet) {
             $("#tbBody").html("");
-            $.getJSON("N04GetNews.ashx", "", function (data) {
+            $.getJSON("N04GetNews.ashx", dataGet, function (datas) {
+                var data = datas.dataList;
                 for (var key in data) {
                     var dateStr =//                /Date(1280802573000)/
                     (eval(data[key].Date.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-M-d");
 
                     $("#tbBody").append("<tr><th>" + data[key].ID + "</th><th>" + data[key].title + "</th><th>" + data[key].content + "</th><th>" + dateStr + "</th><th>" + "<a newsId = '" + data[key].ID + "' href = javascirpt:void(0)>详情</a>" + " | " + "<a newsId = '" + data[key].ID + "' href = javascirpt:void(0) class = 'aNewsEdit'>修改</a>" + "</th></tr>");
                 }
+                $("#navPage").html(datas.pagerTags);
+                // 绑定页面导航的点击事件
+                bindPageLinkClickEvent();
                 // 绑定点击详情的事件
                 bindDetailLinkClickEvent();
                 // 绑定点击修改的事件
                 bindEditLinkClickEvent();
             });
         }
+
+        // 绑定页面导航的点击事件
+        function bindPageLinkClickEvent() {
+            $(".pageLink").click(function() {
+                // 拿到href数据
+                var href = $(this).attr("href");
+                // 发送请求页面数据 并进行更新
+                initTbBody(href.substr(href.lastIndexOf('?') + 1));
+            });
+        }
+
         // ---------------------------- 详情对话框 开始 --------------------
         // 绑定点击详情的事件
         function bindDetailLinkClickEvent() {
@@ -122,6 +138,7 @@
                 }]
             });
         }
+        
         // ---------------------------- 详情对话框 结束 --------------------
         // ---------------------------- 修改对话框 开始 --------------------
         function bindEditLinkClickEvent() {
@@ -200,12 +217,13 @@
 <body>
     <input id="btnAdd" type="button" value="添加" />
     <hr />
-    <table border="1">
-        <thead>
-            <tr><th>新闻编号</th><th>新闻标题</th><th>新闻内容</th><th>日期</th><th>操作</th></tr>
-        </thead>
-        <tbody id="tbBody"></tbody>
-    </table>
+<table border="1">
+    <thead>
+    <tr><th>新闻编号</th><th>新闻标题</th><th>新闻内容</th><th>日期</th><th>操作</th></tr>
+    </thead>
+    <tbody id="tbBody"></tbody>
+</table>
+    <div id="navPage" class="paginator"></div>
     <div id="addDiv">
         <h1>这是添加的对话框</h1>
         <form id="addFrm">

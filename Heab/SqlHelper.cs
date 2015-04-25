@@ -118,7 +118,15 @@ namespace Heab.SQL
                     cmd.Parameters.AddRange(parameters);
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataSet dataset = new DataSet();
-                    adapter.Fill(dataset);
+                    try
+                    {
+                        adapter.Fill(dataset);
+                    }
+                    catch (Exception e)
+                    {
+                        System.Windows.Forms.MessageBox.Show(e.Message);
+                        throw;
+                    }
                     return dataset.Tables[0];
                 }
             }
