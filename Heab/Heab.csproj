@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pager.css" />
+    <Content Include="Table.css" />
     <Content Include="ViewStateDecoder2.0.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

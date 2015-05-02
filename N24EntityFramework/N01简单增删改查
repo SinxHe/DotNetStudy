@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace N24EntityFramework
+{
+    class N01简单增删改查
+    {
+        static void Main(string[] args)
+        {
+            DotNetStudyEntities context = new DotNetStudyEntities();
+
+            // 增
+            // 注意:
+            //      1. 非null非自增字段, 必须设置值
+            //T_Students s1 = new T_Students(){Age = 1, Name = "HeabEfTest", Gender = "男", ClassId = 1, Birthday = DateTime.Now};
+            //context.T_Students.Add(s1);
+            //context.SaveChanges();
+
+            // 删
+            // 注意:
+            //      1. 删除的必须是集合里面有的对象, 所以要先做查询
+            //int id = 1;
+            //var s3 = from s in context.T_Students
+            //         where s.Id == id
+            //         select s;
+            //context.T_Students.Remove(s3.FirstOrDefault());
+            //context.SaveChanges();
+
+            // 改
+            // 注意: 
+            //      1. 同样先查
+            T_Students s4 = new T_Students(){Id = 2, Name = "Ef更改内容"};
+            var s5 = from s in context.T_Students
+                     where s.Id == s4.Id
+                     select s;
+            T_Students s6 = s5.FirstOrDefault();
+            s6.Name = s4.Name;
+            context.SaveChanges();
+
+
+            // 查
+            //var s2 = context.T_Students.Select(s => s);
+            //var s2 = from s in context.T_Students select s;
+            
+            //Console.WriteLine(s2.Count());  // Count()是一个拓展方法(属性不能扩展)
+
+            Console.WriteLine("Ok!");
+        }
+    }
+}
