@@ -65,48 +65,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "N18一般处理程序基础
 		SlnRelativePath = "N18一般处理程序基础\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N19上传文件", "N19上传文件\N19上传文件.csproj", "{008C076B-9A77-4466-8097-455F5D36D13F}"
 EndProject
@@ -123,6 +81,22 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N23高级", "N23高级\N23高级.csproj", "{3E0B9D69-2F56-4261-B74D-652A0B78F52A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N24EntityFramework", "N24EntityFramework\N24EntityFramework.csproj", "{A2627175-6EBE-4E48-967C-87DDFDE66309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25Model", "N25Model\N25Model.csproj", "{8D8D137D-F405-4FBA-90BE-30C843B7827F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25BLL", "N25BLL\N25BLL.csproj", "{7E95860E-D018-40AB-AC7F-6D417FDC5C14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25DAL", "N25DAL\N25DAL.csproj", "{04D6B69C-25E7-46B1-A6F0-FC9537E38CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25UI", "N25UI\N25UI.csproj", "{B1310936-3EBC-4467-8E6A-F7840F1A60D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25IDAL", "N25IDAL\N25IDAL.csproj", "{B8F94C86-5EC9-4659-8E14-359CC795BEC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N25MvcOA", "N25MvcOA", "{BD9FB729-F5EF-4B9A-A286-781664B9C93B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dal", "Dal", "{4B10910E-0372-4857-AF73-F393885AD6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25DalFactory", "N25DalFactory\N25DalFactory.csproj", "{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -246,8 +220,41 @@ Global
 		{A2627175-6EBE-4E48-967C-87DDFDE66309}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2627175-6EBE-4E48-967C-87DDFDE66309}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2627175-6EBE-4E48-967C-87DDFDE66309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8D137D-F405-4FBA-90BE-30C843B7827F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8D137D-F405-4FBA-90BE-30C843B7827F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8D137D-F405-4FBA-90BE-30C843B7827F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8D137D-F405-4FBA-90BE-30C843B7827F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E95860E-D018-40AB-AC7F-6D417FDC5C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E95860E-D018-40AB-AC7F-6D417FDC5C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E95860E-D018-40AB-AC7F-6D417FDC5C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E95860E-D018-40AB-AC7F-6D417FDC5C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D6B69C-25E7-46B1-A6F0-FC9537E38CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D6B69C-25E7-46B1-A6F0-FC9537E38CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D6B69C-25E7-46B1-A6F0-FC9537E38CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D6B69C-25E7-46B1-A6F0-FC9537E38CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1310936-3EBC-4467-8E6A-F7840F1A60D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1310936-3EBC-4467-8E6A-F7840F1A60D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1310936-3EBC-4467-8E6A-F7840F1A60D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1310936-3EBC-4467-8E6A-F7840F1A60D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F94C86-5EC9-4659-8E14-359CC795BEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F94C86-5EC9-4659-8E14-359CC795BEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F94C86-5EC9-4659-8E14-359CC795BEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F94C86-5EC9-4659-8E14-359CC795BEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D8D137D-F405-4FBA-90BE-30C843B7827F} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
+		{7E95860E-D018-40AB-AC7F-6D417FDC5C14} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
+		{04D6B69C-25E7-46B1-A6F0-FC9537E38CA5} = {4B10910E-0372-4857-AF73-F393885AD6B5}
+		{B1310936-3EBC-4467-8E6A-F7840F1A60D0} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
+		{B8F94C86-5EC9-4659-8E14-359CC795BEC3} = {4B10910E-0372-4857-AF73-F393885AD6B5}
+		{4B10910E-0372-4857-AF73-F393885AD6B5} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
+		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A} = {4B10910E-0372-4857-AF73-F393885AD6B5}
 	EndGlobalSection
 EndGlobal

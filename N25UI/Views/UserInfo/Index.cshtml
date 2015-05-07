@@ -1,0 +1,39 @@
+﻿@model IQueryable<N25Model.UserInfo>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<div>
+    @Html.ActionLink("添加", "Add")
+    <table border="1">
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserId</td>
+                <td>@item.UserName</td>
+                <td>@(item.UserGender?"女":"男")</td>
+                <td>@item.UserAge</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
