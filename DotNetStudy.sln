@@ -65,6 +65,69 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "N18一般处理程序基础
 		SlnRelativePath = "N18一般处理程序基础\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N19上传文件", "N19上传文件\N19上传文件.csproj", "{008C076B-9A77-4466-8097-455F5D36D13F}"
 EndProject
@@ -97,6 +160,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dal", "Dal", "{4B10910E-0372-4857-AF73-F393885AD6B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25DalFactory", "N25DalFactory\N25DalFactory.csproj", "{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N25Common", "N25Common\N25Common.csproj", "{E8C17BAE-15E4-4833-B890-1067145FA052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N26新语法", "N26新语法\N26新语法.csproj", "{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "黑马9期", "黑马9期", "{17F7317C-A03E-48D3-844C-F6BF62CC1A06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -244,17 +313,56 @@ Global
 		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C17BAE-15E4-4833-B890-1067145FA052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C17BAE-15E4-4833-B890-1067145FA052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C17BAE-15E4-4833-B890-1067145FA052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C17BAE-15E4-4833-B890-1067145FA052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{C4944EE5-6A41-4691-9369-1954B2671205} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{8B9A3D7C-7B93-408A-AF4C-2CF7A180A9CB} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{8629E44C-8BCF-4BC6-9E7A-5A24FF1F8053} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{FA936B43-7883-4E00-A093-773287C16BE5} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{73F39792-8F08-4056-9EDA-5C3C425A5A50} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{9C7F0EC4-E491-4965-A628-70296D1881D7} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{5FDC3065-6B5F-425D-8293-50E0C474444F} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{C904D199-9F8F-40AF-BBDA-4426107ECB28} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{4FCB59C7-9730-435A-A400-239944F70F5E} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{F762123D-B8CD-4DDE-B477-B6E13811875D} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{EEC136D5-C164-442E-B3F2-82FA66DB7F9D} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{78F173DA-55F0-45DB-937A-81A821EB9DBE} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{429E36E4-9C59-4E1D-B40B-7173C919D16F} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{A98B2C21-1AF2-419D-AAB7-D6BC135B3B26} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{DD51E528-B89C-4562-94EC-CDCC1FB4D4FE} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{3EB57019-B1BF-44CF-9EC4-238CE6287628} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{AA438B44-1C80-4A5B-8296-16ECAC77F250} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{6DE66CAF-D11C-4129-B8A2-EA710ED4F36C} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{F8251454-C3E7-4CCE-B2EE-185F1EBC8B79} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{99C4569D-2110-42D7-92BB-D335CF907D0F} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{A9CFB171-54B9-4A0D-9974-1AEFE6CBFAE2} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{008C076B-9A77-4466-8097-455F5D36D13F} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{68A9453A-4F55-4CF2-8EE0-A35166B0158D} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{FAFF279E-3B0A-4EE1-ABBE-03242E56A4BC} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{14EBEB25-E893-4577-B518-50697681BE3E} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{FBBCF1B0-7B4C-4259-B733-AF4BFC3E2F21} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{5963F8D2-8607-43E4-B6A4-FE29D77527DD} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{3E0B9D69-2F56-4261-B74D-652A0B78F52A} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
+		{A2627175-6EBE-4E48-967C-87DDFDE66309} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
 		{8D8D137D-F405-4FBA-90BE-30C843B7827F} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
 		{7E95860E-D018-40AB-AC7F-6D417FDC5C14} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
 		{04D6B69C-25E7-46B1-A6F0-FC9537E38CA5} = {4B10910E-0372-4857-AF73-F393885AD6B5}
 		{B1310936-3EBC-4467-8E6A-F7840F1A60D0} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
 		{B8F94C86-5EC9-4659-8E14-359CC795BEC3} = {4B10910E-0372-4857-AF73-F393885AD6B5}
+		{BD9FB729-F5EF-4B9A-A286-781664B9C93B} = {17F7317C-A03E-48D3-844C-F6BF62CC1A06}
 		{4B10910E-0372-4857-AF73-F393885AD6B5} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
 		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A} = {4B10910E-0372-4857-AF73-F393885AD6B5}
+		{E8C17BAE-15E4-4833-B890-1067145FA052} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
 	EndGlobalSection
 EndGlobal
