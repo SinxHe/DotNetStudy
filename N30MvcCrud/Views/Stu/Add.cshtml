@@ -1,0 +1,37 @@
+﻿@model N30MvcCrud.Models.Student
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@using (Html.BeginForm("Add", "Stu", FormMethod.Post))
+{
+    <table id="tbData">
+        <tr>
+            <td>@Html.LabelFor(s => s.Name)：</td>
+            <td>@Html.EditorFor(s => s.Name) @Html.ValidationMessageFor(s => s.Name)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(s => s.CId)：</td>
+            <td>
+                @Html.TextBoxFor(s => s.CId) @Html.ValidationMessageFor(s => s.CId)
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(s => s.Gender)：</td>
+            <td>
+                @Html.RadioButtonFor(s => s.Gender, "男") 男
+                @Html.RadioButtonFor(s => s.Gender, "女") 女
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" id="btnSure" value="确 定" />
+                <input type="button" id="btnCancel" value="取 消" />
+            </td>
+        </tr>
+    </table>
+    @Html.ValidationSummary()   // 将错误消息统一显示到这里
+}

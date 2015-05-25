@@ -128,6 +128,132 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "N18一般处理程序基础
 		SlnRelativePath = "N18一般处理程序基础\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N19上传文件", "N19上传文件\N19上传文件.csproj", "{008C076B-9A77-4466-8097-455F5D36D13F}"
 EndProject
@@ -166,6 +292,30 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N26新语法", "N26新语法\N26新语法.csproj", "{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "黑马9期", "黑马9期", "{17F7317C-A03E-48D3-844C-F6BF62CC1A06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N27EntityFramwork", "N27EntityFramwork\N27EntityFramwork.csproj", "{1171EC0F-0B6D-4A1B-BCF8-DD88604B3838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N28_1UI", "N28_1UI\N28_1UI.csproj", "{57C6B46E-FDC9-456F-9A48-3D589BE538A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N28_2BLL", "N28_2BLL\N28_2BLL.csproj", "{207A58F5-01A6-4C72-BC63-500C79F5C1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N28_3DAL", "N28_3DAL\N28_3DAL.csproj", "{A9314BB8-0669-4B08-A9ED-B1F7E2DC356C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N28_4MODEL", "N28_4MODEL\N28_4MODEL.csproj", "{9656E55D-4C7D-4E4A-91C0-BC11FF04BCFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N28Ef三层", "N28Ef三层", "{7ABB698A-ACDA-4B8A-8883-2A30F28E582F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N28_5Common", "N28_5Common\N28_5Common.csproj", "{28C61F19-2F2B-4C70-A5C9-0EBA1F3D0381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N29MVC", "N29MVC\N29MVC.csproj", "{C2E365C1-1CA6-490C-B3FD-41E06AAF492F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01Socket客户端", "P01Socket客户端\P01Socket客户端.csproj", "{CDCB34CB-CE0E-41AF-B958-AFD5815FC38C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02Socket服务器", "P02Socket服务器\P02Socket服务器.csproj", "{EFA4D042-30F7-47A0-9353-2CBBBA451B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N30MvcCrud", "N30MvcCrud\N30MvcCrud.csproj", "{9FD4F6C5-C7AC-423B-A535-61E921DCE327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N31区域", "N31区域\N31区域.csproj", "{BFB2FDEF-7B4A-4B08-B1F1-8B0DF13D3E53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,6 +471,50 @@ Global
 		{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA4A61F1-A24B-444C-874D-5B1BF48F3F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1171EC0F-0B6D-4A1B-BCF8-DD88604B3838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1171EC0F-0B6D-4A1B-BCF8-DD88604B3838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1171EC0F-0B6D-4A1B-BCF8-DD88604B3838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1171EC0F-0B6D-4A1B-BCF8-DD88604B3838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C6B46E-FDC9-456F-9A48-3D589BE538A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C6B46E-FDC9-456F-9A48-3D589BE538A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C6B46E-FDC9-456F-9A48-3D589BE538A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C6B46E-FDC9-456F-9A48-3D589BE538A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207A58F5-01A6-4C72-BC63-500C79F5C1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207A58F5-01A6-4C72-BC63-500C79F5C1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207A58F5-01A6-4C72-BC63-500C79F5C1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207A58F5-01A6-4C72-BC63-500C79F5C1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9314BB8-0669-4B08-A9ED-B1F7E2DC356C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9314BB8-0669-4B08-A9ED-B1F7E2DC356C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9314BB8-0669-4B08-A9ED-B1F7E2DC356C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9314BB8-0669-4B08-A9ED-B1F7E2DC356C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9656E55D-4C7D-4E4A-91C0-BC11FF04BCFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9656E55D-4C7D-4E4A-91C0-BC11FF04BCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9656E55D-4C7D-4E4A-91C0-BC11FF04BCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9656E55D-4C7D-4E4A-91C0-BC11FF04BCFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C61F19-2F2B-4C70-A5C9-0EBA1F3D0381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C61F19-2F2B-4C70-A5C9-0EBA1F3D0381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C61F19-2F2B-4C70-A5C9-0EBA1F3D0381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C61F19-2F2B-4C70-A5C9-0EBA1F3D0381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E365C1-1CA6-490C-B3FD-41E06AAF492F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E365C1-1CA6-490C-B3FD-41E06AAF492F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E365C1-1CA6-490C-B3FD-41E06AAF492F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E365C1-1CA6-490C-B3FD-41E06AAF492F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCB34CB-CE0E-41AF-B958-AFD5815FC38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCB34CB-CE0E-41AF-B958-AFD5815FC38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCB34CB-CE0E-41AF-B958-AFD5815FC38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCB34CB-CE0E-41AF-B958-AFD5815FC38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA4D042-30F7-47A0-9353-2CBBBA451B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA4D042-30F7-47A0-9353-2CBBBA451B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA4D042-30F7-47A0-9353-2CBBBA451B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA4D042-30F7-47A0-9353-2CBBBA451B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD4F6C5-C7AC-423B-A535-61E921DCE327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD4F6C5-C7AC-423B-A535-61E921DCE327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD4F6C5-C7AC-423B-A535-61E921DCE327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD4F6C5-C7AC-423B-A535-61E921DCE327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB2FDEF-7B4A-4B08-B1F1-8B0DF13D3E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB2FDEF-7B4A-4B08-B1F1-8B0DF13D3E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB2FDEF-7B4A-4B08-B1F1-8B0DF13D3E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB2FDEF-7B4A-4B08-B1F1-8B0DF13D3E53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -364,5 +558,10 @@ Global
 		{4B10910E-0372-4857-AF73-F393885AD6B5} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
 		{5D33B4A0-440C-41CC-AD0A-65B0A5E08C0A} = {4B10910E-0372-4857-AF73-F393885AD6B5}
 		{E8C17BAE-15E4-4833-B890-1067145FA052} = {BD9FB729-F5EF-4B9A-A286-781664B9C93B}
+		{57C6B46E-FDC9-456F-9A48-3D589BE538A0} = {7ABB698A-ACDA-4B8A-8883-2A30F28E582F}
+		{207A58F5-01A6-4C72-BC63-500C79F5C1B1} = {7ABB698A-ACDA-4B8A-8883-2A30F28E582F}
+		{A9314BB8-0669-4B08-A9ED-B1F7E2DC356C} = {7ABB698A-ACDA-4B8A-8883-2A30F28E582F}
+		{9656E55D-4C7D-4E4A-91C0-BC11FF04BCFA} = {7ABB698A-ACDA-4B8A-8883-2A30F28E582F}
+		{28C61F19-2F2B-4C70-A5C9-0EBA1F3D0381} = {7ABB698A-ACDA-4B8A-8883-2A30F28E582F}
 	EndGlobalSection
 EndGlobal

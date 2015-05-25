@@ -1,0 +1,43 @@
+﻿@using N29MVC.Models
+@{
+    Layout = null;  // 不使用母版页
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>姓名</th>
+            <th>登录名</th>
+            <th>软删除</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (User item in Model as List<User>)
+        {
+            <tr>
+                <td>@item.uId</td>
+                <td>@item.uName</td>
+                <td>@item.uLoginName</td>
+                <td>@item.uIsDel.ToString()</td>
+                <td>
+                    <a href="/user/Del/@item.uId">删</a> |
+                    <a href="/user/Modify/@item.uId">改</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

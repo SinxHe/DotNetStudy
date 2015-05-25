@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="N01反射获取程序集信息.cs" />
+    <None Include="N01反射获取程序集信息" />
+    <Compile Include="N02反射获取和设置类中的指定属性.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

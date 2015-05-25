@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="C01Dog.cs" />
     <Compile Include="C02SmallDog.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="N01匿名方法 拓展方法 lambda.cs" />
     <Compile Include="N02SQO标准查询运算符.cs" />
     <Compile Include="N03Linq.cs" />
