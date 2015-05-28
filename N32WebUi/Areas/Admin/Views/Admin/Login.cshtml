@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @Scripts.Render("~/MvcMinJQuery"); @*1. 生成浏览器缓存 2. 解决路径问题*@
+
+    <script src="~/Scripts/Heab-AjaxModel.js"></script>
+    <script type="text/javascript">
+        function AjaxFormOnSuccess(jsonData) {
+            $.ProcessAjaxData(jsonData);    // 调用我的拓展JQuery方法
+        }
+
+        function AjaxFormOnFailure(obj) {
+            alert("出现错误, 错误码: " + obj.status);
+        }
+    </script>
+    <style type="text/css">
+        #divAjaxFormMsg {
+            display: none; /*会重排*/
+            /*visibility: hidden;*/ /*不会重排*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Ajax.BeginForm(new AjaxOptions()
+    {
+        HttpMethod = "post",
+        OnSuccess = "AjaxFormOnSuccess",
+        OnFailure = "AjaxFormOnFailure",
+        LoadingElementId = "divAjaxFormMsg",
+
+    }))
+        {
+            <input type="text" value="admin" name="txtName" /><br />
+            <input type="password" value="123123" name="txtPwd" /><br />
+            <input type="submit" value="登陆" />
+        }
+        <div id="divAjaxFormMsg">
+            <h2>登陆中...</h2>
+        </div>
+    </div>
+</body>
+</html>
