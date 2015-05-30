@@ -296,6 +296,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "N18一般处理程序基础
 		SlnRelativePath = "N18一般处理程序基础\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
+		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "N18一般处理程序基础\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N19上传文件", "N19上传文件\N19上传文件.csproj", "{008C076B-9A77-4466-8097-455F5D36D13F}"
 EndProject
@@ -391,7 +412,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N32DI", "N32DI\N32DI.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N32WebUi.Helper", "N32WebUi.Helper\N32WebUi.Helper.csproj", "{60453B9B-1DCA-409E-A559-31DB9B09548C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N32WebUi.Logic.Admin", "N32WebUi.Logic.Admin\N32WebUi.Logic.Admin.csproj", "{E72EA241-1318-46F5-A587-58F9940AB7A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N32WebUi.Login.Admin", "N32WebUi.Logic.Admin\N32WebUi.Login.Admin.csproj", "{E72EA241-1318-46F5-A587-58F9940AB7A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N32IDAL", "N32IDAL\N32IDAL.csproj", "{19057EE1-9A21-462F-98C2-922EE9BA8F5A}"
 EndProject

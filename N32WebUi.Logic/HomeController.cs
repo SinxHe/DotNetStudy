@@ -17,7 +17,7 @@ namespace N32WebUi.Logic
         public ActionResult Index()
         {
             // 1. 要调用业务层 对象 获取 权限
-            var list = Helper.OperateContext.bllSession.IOu_PermissionBll.GetListBy(p => p.pIsDel == false);
+            var list = Helper.OperateContext.Current.BllSession.IOu_PermissionBll.GetListBy(p => p.pIsDel == false);
             // 2. 加载视图
             return View(list);
         }

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace N32WebUi.Logic.Admin
+namespace N32WebUi.Login.Admin
 {
     /// <summary>
     /// 区域注册类
@@ -21,7 +21,7 @@ namespace N32WebUi.Logic.Admin
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional },
-                new string[1] { "N32WebUi.Logic.Admin" }
+                new string[1] { "N32WebUi.Login.Admin" }
             );
         }
     }

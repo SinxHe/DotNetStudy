@@ -7,8 +7,8 @@
     <ProjectGuid>{E72EA241-1318-46F5-A587-58F9940AB7A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>N32WebUi.Logic.Admin</RootNamespace>
-    <AssemblyName>N32WebUi.Logic.Admin</AssemblyName>
+    <RootNamespace>N32WebUi.Login.Admin</RootNamespace>
+    <AssemblyName>N32WebUi.Login.Admin</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,9 +46,14 @@
   <ItemGroup>
     <Compile Include="AdminAreaRegistration.cs" />
     <Compile Include="AdminController.cs" />
+    <Compile Include="Filters\LoginValidateAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\N32Common\N32Common.csproj">
+      <Project>{bd6a0e4a-19a9-4edc-bed1-a3004dae7111}</Project>
+      <Name>N32Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\N32DI\N32DI.csproj">
       <Project>{495717d1-a1c5-44a5-aaa5-26739c8c158c}</Project>
       <Name>N32DI</Name>

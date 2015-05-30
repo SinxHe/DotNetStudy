@@ -46,7 +46,19 @@ namespace N32WebUi
                 .Include("~/Scripts/jquery-1.8.2.min.js")
                 .Include("~/Scripts/jquery.unobtrusive-ajax.min.js")
                 .Include("~/Scripts/jquery.validate.min.js")
-                .Include("~/Scripts/jquery.validate.unobtrusive.min.js"));
+                .Include("~/Scripts/jquery.validate.unobtrusive.min.js")
+                .Include("~/Scripts/Heab-AjaxModel.js"));
+
+            bundles.Add(new ScriptBundle("~/EasyUiJQuery")
+                .Include("~/EasyUi/jquery.min.js")
+                .Include("~/EasyUi/jquery.easyui.min.js")
+                .Include("~/EasyUi/easyui-lang-zh_CN.js")
+                .Include("~/Scripts/Heab-AjaxModel.js"));
+
+            bundles.Add(new StyleBundle("~/EasyUiCss")
+                .Include("~/EasyUi/themes/icon.css")
+                .Include("~/EasyUi/themes/default/easyui.css"));
+
             BundleTable.EnableOptimizations = true; // 开启合并
         }
         
