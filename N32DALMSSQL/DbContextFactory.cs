@@ -22,6 +22,7 @@ namespace N32DALMSSQL
             if (dbContext == null)
             {
                 dbContext = new OuOAEntities();
+                dbContext.Configuration.ValidateOnSaveEnabled = false;
                 CallContext.SetData(typeof(DbContextFactory).Name + "dbContext", dbContext);
             }
             return dbContext;

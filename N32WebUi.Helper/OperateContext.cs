@@ -181,9 +181,13 @@ namespace N32WebUi.Helper
         {
             var listP = from per in UserPermission
                         where
-                            string.Equals(per.pAreaName, areaName, StringComparison.CurrentCultureIgnoreCase) &&
-                            string.Equals(per.pControllerName, controllerName, StringComparison.CurrentCultureIgnoreCase) &&
-                            string.Equals(per.pActionName, actionName, StringComparison.CurrentCultureIgnoreCase) &&
+                            string.Equals(per.pAreaName, areaName, 
+                                StringComparison.CurrentCultureIgnoreCase) &&
+                            string.Equals(per.pControllerName, controllerName,
+                                StringComparison.CurrentCultureIgnoreCase) &&
+                            string.Equals(per.pActionName, actionName, 
+                                StringComparison.CurrentCultureIgnoreCase) &&
+                            per.pFormMethod == 3 || // 3 代表Get和Post都允许
                             per.pFormMethod == (httpMethod.ToLower() == "get" ? 1 : 2)
                         select per;
             ;

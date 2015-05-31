@@ -5,7 +5,7 @@ namespace N32WebUi
 {
     public class BundleConfig
     {
-        
+
         // 有关 Bundling 的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
@@ -39,28 +39,36 @@ namespace N32WebUi
                         "~/Content/themes/base/jquery.ui.tabs.css",
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
-                        "~/Content/themes/base/jquery.ui.theme.css")); 
+                        "~/Content/themes/base/jquery.ui.theme.css"));
             #endregion
 
+            #region MVC异步和注解验证
             bundles.Add(new ScriptBundle("~/MvcMinJQuery")
-                .Include("~/Scripts/jquery-1.8.2.min.js")
-                .Include("~/Scripts/jquery.unobtrusive-ajax.min.js")
-                .Include("~/Scripts/jquery.validate.min.js")
-                .Include("~/Scripts/jquery.validate.unobtrusive.min.js")
-                .Include("~/Scripts/Heab-AjaxModel.js"));
+                    .Include("~/Scripts/jquery-1.8.2.min.js")
+                    .Include("~/Scripts/jquery.unobtrusive-ajax.min.js")
+                    .Include("~/Scripts/jquery.validate.min.js")
+                    .Include("~/Scripts/jquery.validate.unobtrusive.min.js")
+                    .Include("~/Scripts/Heab-AjaxModel.js"));
+            #endregion
 
+            #region EasyUi
+            #region JQuery - @Scripts.Render("~/EasyUiJQuery")
             bundles.Add(new ScriptBundle("~/EasyUiJQuery")
-                .Include("~/EasyUi/jquery.min.js")
-                .Include("~/EasyUi/jquery.easyui.min.js")
-                .Include("~/EasyUi/easyui-lang-zh_CN.js")
-                .Include("~/Scripts/Heab-AjaxModel.js"));
-
-            bundles.Add(new StyleBundle("~/EasyUiCss")
+                        .Include("~/EasyUi/jquery.min.js")
+                        .Include("~/EasyUi/jquery.easyui.min.js")
+                        .Include("~/EasyUi/easyui-lang-zh_CN.js")
+                        .Include("~/Scripts/Heab-AjaxModel.js")); 
+            #endregion
+            #region CSS - @Styles.Render("~/EasyUi/themes/default/css")
+            // 放到Bundle中会拿不到图片(浏览器请求虚拟路径问题, 除非自定义名字也是一个合适的路径)
+            bundles.Add(new StyleBundle("~/EasyUi/themes/default/css")
                 .Include("~/EasyUi/themes/icon.css")
-                .Include("~/EasyUi/themes/default/easyui.css"));
+                .Include("~/EasyUi/themes/default/easyui.css"));  
+            #endregion
+            #endregion
 
             BundleTable.EnableOptimizations = true; // 开启合并
         }
-        
+
     }
 }

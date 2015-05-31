@@ -101,5 +101,30 @@ namespace N32MODEL
         }
         #endregion
         #endregion
+
+        #region 3.0 生成 ViewModel - oViewModel()
+        /// <summary>
+        /// 生成 ViewModel
+        /// </summary>
+        /// <returns></returns>
+        public ViewModel.Permission ToViewModel()
+        {
+            ViewModel.Permission viewModel = new ViewModel.Permission()
+            {
+                pid = this.pid,
+                pParent = this.pParent,
+                pName = this.pName,
+                pAreaName = this.pAreaName,
+                pControllerName = this.pControllerName,
+                pActionName = this.pActionName,
+                pFormMethod = this.pFormMethod,
+                pOperationType = this.pOperationType,
+                pOrder = this.pOrder,
+                pIsShow = this.pIsShow,
+                pRemark = this.pRemark,
+            };
+            return viewModel;
+        }
+        #endregion
     }
 }
