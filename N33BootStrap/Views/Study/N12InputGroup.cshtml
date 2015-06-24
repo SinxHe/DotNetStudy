@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>N04InputGroup</title>
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script> @*对JQuery版本有要求*@
+    <script src="~/Scripts/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <link href="~/Scripts/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="input-group input-group-lg">
+            @*input-group-lg大屏幕*@
+            <span class="input-group-addon">@@</span>
+            <input type="text" class="form-control" placeholder="UserName" />
+        </div>
+
+        <div class="input-group">
+            @*默认*@
+            <input type="text" class="form-control" />
+            <span class="input-group-addon">.00</span>
+        </div>
+
+        <div class="input-group input-group-sm">
+            @*input-group-sm小屏幕*@
+            <span class="input-group-addon">@@</span>
+            <input type="text" class="form-control" />
+            <span class="input-group-addon">.00</span>
+        </div>
+
+        <div class="row">
+            @*class="row"可以控制大小*@
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="radio" />
+                    </span>
+                    <input type="text" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <button type="button" class="btn btn-default">Go!</button>
+                    </span>
+                    <input type="text" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default">Go!</button>
+                    </span>
+                    <input type="text" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            Action
+                            <span class="caret"></span> @*小箭头*@
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            @*dropdown-menu-right 下拉菜单向右*@
+                            <li role="presentation" class="dropdown-header">小写</li>
+                            <li class="disabled"><a href="#" role="menuitem">1</a></li> @*class="disabled" 禁用*@
+                            <li><a href="#" role="menuitem">2</a></li>
+                            <li role="presentation" class="divider"></li> @*分割线*@
+                            <li role="presentation" class="dropdown-header">大写</li>
+                            <li><a href="#" role="menuitem">一</a></li>
+                            <li><a href="#" role="menuitem">二</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

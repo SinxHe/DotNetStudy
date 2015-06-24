@@ -1,11 +1,7 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using N32MODEL;
+using N32MODEL;	// 约定
 
-namespace N32IDAL
+namespace N32IDAL // 约定
 {
 	public partial interface IBill_LeaveDal : IBaseDal<Bill_Leave>
     {
@@ -70,6 +66,5 @@ namespace N32IDAL
 	public partial interface IWF_WorkFlowNodeDal : IBaseDal<WF_WorkFlowNode>
     {
     }
-
 
 }

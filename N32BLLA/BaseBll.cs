@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
+using System.Web;
 using N32IBLL;
 using N32IDAL;
 
@@ -14,12 +15,12 @@ namespace N32BLLA
     /// </summary>
     public abstract class BaseBll<T>:IBaseBll<T> where T:class, new()
     {
-        public BaseBll()
+        protected BaseBll()
         {
             SetDal();
         }
         // 1. 数据层 接口对象 - 等待被实例化(控制反转)
-        protected IBaseDal<T> iDal = null;
+        protected IBaseDal<T> IDal = null;
 
         /// <summary>
         /// 由子类实现, 为 业务父类 里的 数据接口对象 设置值
@@ -29,7 +30,7 @@ namespace N32BLLA
         /// <summary>
         /// 2. 数据仓储接口(相当于数据层工厂, 可以拿到所有的数据子类对象)
         /// </summary>
-        private IDbSession iDbSession = null;
+        private IDbSession _iDbSession = null;
 
         #region 数据仓储 属性
 
@@ -37,10 +38,11 @@ namespace N32BLLA
         {
             get
             {
-                if (iDbSession == null)
+                if (_iDbSession == null)
                 {
                     //  1. 读取配置文件
                     string strFactoryDll = N32Common.ConfigurationHelper.AppSettings("DbSessionFactoryDll");
+                    strFactoryDll = HttpContext.Current.Server.MapPath(strFactoryDll);
                     string strFactoryType = N32Common.ConfigurationHelper.AppSettings("DbSessionFactory");
                     // 2. 通过反射创建DbSessionFactory对象
                     Assembly dalDll = Assembly.LoadFrom(strFactoryDll);
@@ -50,9 +52,9 @@ namespace N32BLLA
                     // 2. 根据配置文件内容 使用 DI层里的Spring.Net 创建 DbSessionFactory 工厂对象
 
                     // 3. 通过工厂创建DbSession工厂对象
-                    iDbSession = sessionFactory.GetDbSession();
+                    _iDbSession = sessionFactory.GetDbSession();
                 }
-                return iDbSession;
+                return _iDbSession;
             }
         }
 
@@ -63,7 +65,7 @@ namespace N32BLLA
 
         public /*T*/ int Add(T model)
         {
-            return iDal.Add(model);
+            return IDal.Add(model);
         }
 
         #endregion
@@ -77,7 +79,7 @@ namespace N32BLLA
         /// <returns></returns>
         public int Del(T model)
         {
-            return iDal.Del(model);
+            return IDal.Del(model);
         }
 
         /// <summary>
@@ -87,7 +89,7 @@ namespace N32BLLA
         /// <returns></returns>
         public int DelBy(Expression<Func<T, bool>> delWhere)
         {
-            return iDal.DelBy(delWhere);
+            return IDal.DelBy(delWhere);
         }
 
         #endregion
@@ -102,7 +104,7 @@ namespace N32BLLA
         /// <returns></returns>
         public int Modify(T model, params string[] modifiedProNames)
         {
-            return iDal.Modify(model, modifiedProNames);
+            return IDal.Modify(model, modifiedProNames);
         }
 
         /// <summary>
@@ -114,7 +116,7 @@ namespace N32BLLA
         /// <returns></returns>
         public int Modify2(T model, Expression<Func<T, bool>> whereLambda, params string[] modifiedProNames)
         {
-            return iDal.Modify2(model, whereLambda, modifiedProNames);
+            return IDal.Modify2(model, whereLambda, modifiedProNames);
         }
 
         /// <summary>
@@ -126,7 +128,7 @@ namespace N32BLLA
         /// <returns></returns>
         public int ModifyBy(T commonModel, Expression<Func<T, bool>> whereLambda, params string[] modifiedPaoNames)
         {
-            return iDal.ModifyBy(commonModel, whereLambda, modifiedPaoNames);
+            return IDal.ModifyBy(commonModel, whereLambda, modifiedPaoNames);
         }
 
         #endregion
@@ -140,7 +142,7 @@ namespace N32BLLA
         /// <returns></returns>
         public List<T> GetListBy(Expression<Func<T, bool>> whereLambda)
         {
-            return iDal.GetListBy(whereLambda);
+            return IDal.GetListBy(whereLambda);
         }
 
         /// <summary>
@@ -152,7 +154,7 @@ namespace N32BLLA
         /// <returns></returns>
         public List<T> GetListBy<TKey>(Expression<Func<T, bool>> whereLambda, Expression<Func<T, TKey>> orderLambda)
         {
-            return iDal.GetListBy(whereLambda, orderLambda);
+            return IDal.GetListBy(whereLambda, orderLambda);
         }
 
         /// <summary>
@@ -165,7 +167,7 @@ namespace N32BLLA
         /// <returns></returns>
         public List<T> GetPageList<TKey>(int pageIndex, int pageSize, Expression<Func<T, TKey>> orderByLambda, Expression<Func<T, bool>> whereLambda)
         {
-            return iDal.GetPageList(pageIndex, pageSize, orderByLambda, whereLambda);// -- 分页前一定要排序
+            return IDal.GetPageList(pageIndex, pageSize, orderByLambda, whereLambda);// -- 分页前一定要排序
         }
 
         #endregion

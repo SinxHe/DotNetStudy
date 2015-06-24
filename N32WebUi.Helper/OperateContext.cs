@@ -32,7 +32,8 @@ namespace N32WebUi.Helper
         public readonly N32IBLL.IBllSession BllSession;
 
         #region 实例构造函数 初始化 业务仓储
-        public OperateContext()
+
+        private OperateContext()
         {
             BllSession = N32DI.SpringHelper.GetObject<N32IBLL.IBllSession>("BllSession");
         }

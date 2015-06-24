@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>N07Form</title>
+    <link href="~/Scripts/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form role="form">
+            <fieldset disabled>
+                @*禁用整个表单*@
+                <input type="text" class="form-control" />
+                <textarea class="form-control" rows="5">
+                    Hello 我设置的rows = '5'
+                </textarea>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="" />
+                        爱好1
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="" />
+                        爱好2
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                        <input name="radios" type="radio" checked /> @*name="radios"保证只能选一个*@
+                        男
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input name="radios" type="radio" checked /> @*name="radios"保证只能选一个*@
+                        女
+                    </label>
+                </div>
+
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <select class="form-control" multiple>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <p class="form-control-static">以这个标签内的内容提醒用户输入格式: 3948@qq.com</p>
+
+            </fieldset>
+            <input type="text" class="form-control" placeholder="我被disable了" disabled />
+            <input type="text" class="form-control" placeholder="我被readonly了" readonly />
+            <h2>给文本框上色, 表示状态</h2>
+            <div class="form-group has-warning">
+                <label>邮箱:</label>
+                <input type="text" class="form-control" placeholder="has-warning"/>
+            </div>
+            <div class="row">
+                <div class="form-group has-success has-feedback col-xs-3">
+                    <label>用户名:</label>
+                    <input type="text" class="form-control" placeholder="has-success" />
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+                </div>
+            </div>
+            <div class="form-group has-error">
+                <label>密码:</label>
+                <input type="text" class="form-control" placeholder="has-error" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

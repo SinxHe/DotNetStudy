@@ -1,10 +1,5 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using N32IDAL;
-using N32MODEL;
 
 namespace N32DALMSSQL
 {

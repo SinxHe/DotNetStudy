@@ -1,7 +1,7 @@
 ﻿<#@ template language="C#" debug="false" hostspecific="true"#>
 <#@ include file="EF.Utility.CS.ttinclude"#><#@
  output extension=".cs"#>
- <#
+<#
 CodeGenerationTools code = new CodeGenerationTools(this);
 MetadataLoader loader = new MetadataLoader(this);
 CodeRegion region = new CodeRegion(this, 1);
@@ -15,15 +15,10 @@ string namespaceName = code.VsNamespaceSuggestion();
 EntityFrameworkTemplateFileManager fileManager = EntityFrameworkTemplateFileManager.Create(this);
 
 #>
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using N32BLLA;
 using N32IBLL;
 using N32MODEL;
 
-namespace BLLA
+namespace N32BLLA
 {
 <#
 
@@ -38,7 +33,7 @@ foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e =>
     {
 		public override void SetDal()
 		{
-			iDal = DbSession.I<#=entity.Name#>Dal;
+			IDal = DbSession.I<#=entity.Name#>Dal;
 		}
     }
 <#}#>

@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>N03DropDownList</title>
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script> @*对JQuery版本有要求*@
+    <script src="~/Scripts/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <link href="~/Scripts/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <div class="dropdown pull-right">
+        @*pull-right 按钮向右 下拉菜单不覆盖按钮*@
+        <button class="btn btn-default dropdown-toggle pull-right" type="button" data-toggle="dropdown">
+            @*pull-right 按钮向右 下拉菜单覆盖按钮*@
+            下拉菜单
+            <span class="caret"></span> @*小箭头*@
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+            @*dropdown-menu-right 下拉菜单向右*@
+            <li role="presentation" class="dropdown-header">小写</li>
+            <li class="disabled"><a href="#" role="menuitem">1</a></li> @*class="disabled" 禁用*@
+            <li><a href="#" role="menuitem">2</a></li>
+            <li role="presentation" class="divider"></li> @*分割线*@
+            <li role="presentation" class="dropdown-header">大写</li>
+            <li><a href="#" role="menuitem">一</a></li>
+            <li><a href="#" role="menuitem">二</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

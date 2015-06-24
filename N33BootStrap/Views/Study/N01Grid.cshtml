@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Scripts/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .row {
+            margin-bottom: 20px;
+        }
+
+            .row .row {
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #eee;
+            background-color: rgba(86,61,124,.15);  /*透明度*/
+            border: 1px solid #ddd;
+            border: 1px solid rgba(86,61,124,.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        @*所有的都在container中*@
+        <div class="row"> @*一行*@
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">多出12列的会进入下一行, 超出的字数会自适应</div>
+        </div>
+
+        @*偏移*@
+
+        <div class="row"> @*加一行*@
+            <div class="col-md-4 col-md-offset-1">偏移一个 col-md-offset-1</div>
+        </div>
+
+        @*嵌套*@
+
+        <div class="row">
+            <div class="col-sm-9">
+                One
+                <div class="row">
+                    <div class="col-xs-8">
+                        First
+                    </div>
+                    <div class="col-xs-4">
+                        Second
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*列的排序*@
+
+        <div class="row">
+            <div class="col-md-3 col-md-push-9">col-md-3</div> @*向右推9个*@
+            <div class="col-md-9 col-md-pull-5">col-md-9 向左拉五个, 拉出了屏幕</div> @*向左拉5个*@
+        </div>
+
+    </div>
+</body>
+</html>

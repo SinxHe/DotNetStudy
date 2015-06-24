@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>N13Nav</title>
+</head>
+<body>
+    <h2 class="text-center">普通标签页</h2>
+    <div class="container">
+        <ul class="mytab nav nav-tabs" role="tablist">
+            @*添加Role可以避免一些问题*@
+            <li role="presentation" class="active"><a href="">Hello</a></li>
+            <li role="presentation"><a href="">World</a></li>
+            <li role="presentation"><a href="">World</a></li>
+        </ul>
+    </div>
+
+    <hr />
+    <h2 class="text-center">胶囊式标签页</h2>
+    <div class="container">
+        <ul class="mytab nav nav-pills" role="tablist">
+            @*添加Role可以避免一些问题*@
+            <li role="presentation" class="active"><a href="">Hello</a></li>
+            <li role="presentation"><a href="">World</a></li>
+            <li role="presentation"><a href="">World</a></li>
+        </ul>
+    </div>
+
+    <hr />
+    <h2 class="text-center">垂直 胶囊式 标签页</h2>
+    <div class="container">
+        <ul class="mytab nav nav-pills nav-stacked" role="tablist">
+            @*添加Role可以避免一些问题*@
+            <li role="presentation" class="active"><a href="">Hello</a></li>
+            <li role="presentation"><a href="">World</a></li>
+            <li role="presentation"><a href="">World</a></li>
+        </ul>
+    </div>
+
+    <hr />
+    <h2 class="text-center">两端对齐 胶囊式标签页</h2>
+    <div class="container">
+        <ul class="mytab nav nav-pills nav-justified" role="tablist">
+            @*添加Role可以避免一些问题*@
+            <li role="presentation" class="active"><a href="">Hello</a></li>
+            <li role="presentation"><a href="">World</a></li>
+            <li role="presentation" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    World
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1">Hello 1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">Hello 2</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">Hello 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    @*这些js文件必须放在下边才有效*@
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <link href="~/Scripts/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $($(".mytab a").click(function (e) {
+            e.preventDefault();
+            $(this).tab("show");
+        }));
+    </script>
+</body>
+</html>
