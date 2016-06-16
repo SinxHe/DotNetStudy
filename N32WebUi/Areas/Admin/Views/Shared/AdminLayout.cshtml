@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @*放到Bundle中会拿不到图片(浏览器请求虚拟路径问题, 除非自定义名字也是一个合适的路径)*@
+    @*<link href="~/EasyUi/" rel="stylesheet" />
+    <link href="~/EasyUi/themes/default/easyui.css" rel="stylesheet" />*@
+    @Styles.Render("~/EasyUi/themes/default/css")
+    @Scripts.Render("~/EasyUiJQuery")
+</head>
+<body class="easyui-layout">
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

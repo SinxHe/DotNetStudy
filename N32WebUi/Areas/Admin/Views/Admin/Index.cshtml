@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/EasyUi/" rel="stylesheet" />
+    <link href="~/EasyUi/themes/default/easyui.css" rel="stylesheet" />
+    @Scripts.Render("~/EasyUiJQuery")
+    <script type="text/javascript">
+        $(function() {
+            // 1. 加载菜单树
+            $("#menuTree").tree({
+                url: '/admin/admin/getMenuData',
+                onLoadSuccess: function(node, data) {
+                    //调用方法 统一处理 Ajax获取的 json数据！
+                    $.ProcessAjaxData(data);
+                },
+                onClick: function(node) {
+                    NewTab(node);
+                }
+            });
+        });
+
+        function NewTab(treeNode) {
+            // 1. 判断是否已经存在
+            var $tbs = $("#tbs");
+            if ($tbs.tabs("exists", treeNode.text)) {
+                $tbs.tabs("select", treeNode.text);
+            } else {
+                $tbs.tabs("add", {
+                    title: treeNode.text,
+                    content: NewIframe(treeNode.attributes.Url),
+                    closable: true
+                });
+            }
+        }
+
+        function NewIframe(url) {
+            var $ifr = $("<iframe src='" + url + "' style='border:1px solid; width:100%; height:100%'></iframe>");
+            return $ifr;
+        }
+    </script>
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'north',split:true" style="height:100px;"></div>
+    <div data-options="region:'west',title:'菜单导航',split:true" style="width:240px;">
+        <ul id="menuTree"></ul>
+    </div>
+    <div data-options="region:'center'" style="padding:5px;background:#eee;">
+        <div id="tbs" class="easyui-tabs" data-options="fit:true, border: false"></div>
+    </div>
+</body>
+</html>

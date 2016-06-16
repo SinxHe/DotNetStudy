@@ -1,0 +1,56 @@
+﻿@model N25Model.UserInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script> @*unobtrusive 不显眼的*@
+    <script>
+        function AddAfter(msg) {
+            if (msg == "ok") {
+                window.location.href = '@Url.Action("Index", "UserInfo")';
+            } else {
+                alert("添加失败!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        @using (Ajax.BeginForm("Add", "UserInfo", new AjaxOptions()
+        {
+            OnSuccess = "AddAfter"
+        }))
+        {
+            <table border="1">
+                <tr>
+                    <td>姓名:</td>
+                    <td>@Html.TextBoxFor(u => u.UserName)</td>
+                </tr>
+                <tr>
+                    <td>性别:</td>
+                    <td>
+                        <input type="radio" name="UserGender" value="false"/> 男@*名字与UserInfo类中的名字一致才能达到自动装配的目的*@
+                        <input type="radio" name="UserGender" value="true"/> 女
+                    </td>
+                </tr>
+                <tr>
+                    <td>年龄:</td>
+                    <td>@Html.TextBoxFor(u => u.UserAge)</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="添加"/>
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿@model N29MVC.Models.User
+@*为动态类型Model指定类型, 使其成为强类型*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Modify</title>
+</head>
+<body>
+    <div>
+        <form action="/user/Modify" method="post">
+            <input type="hidden" name="uId" value="@Model.uId"/>
+            <table border="1">
+                <tr>
+                    <td>姓名: </td>
+                    <td><input type="text" name="uName" value="@Model.uName"/></td>
+                </tr>
+                <tr>
+                    <td>软删除: </td>
+                    <td>
+                        @*传统方法生成下拉列表*@
+                        @*<select>
+                                @foreach (string item in ViewBag.IsDelList as List<string>)
+                                {
+                                    if (item == Model.uIsDel.ToString())
+                                    {
+                                        <option selected value="@item">@item</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                                }
+                            </select>*@
+                        @*利用HtmlHelper生成下拉列表*@
+                        @Html.DropDownList("uIsDel", ViewBag.IsDelList as IEnumerable<SelectListItem>)
+                        @*// 下拉列表的名字不能随便起, 还要自动装载呢*@
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Edit"/>
+        </form>
+    </div>
+</body>
+</html>

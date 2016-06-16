@@ -1,0 +1,7 @@
+﻿MODEL
+IDAL -> MODEL
+DAL -> IDAL, MODEL, EntityFramework(与MODEL中版本相同), Entity
+IBLL -> MODEL
+BLL -> IBLL, IDAL, MODEL, DI
+Controller -> IBLL, MODEL, DI
+Web -> Controller, MODEL

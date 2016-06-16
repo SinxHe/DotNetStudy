@@ -1,0 +1,179 @@
+﻿@{
+    ViewBag.Title = "学员列表";
+}
+@section headSection
+{
+    <script src="~/Scripts/jquery.tmpl.min.js"></script>
+    <script src="~/Scripts/PageBar.js"></script>
+
+    @*异步加载一页数据 删除数据*@
+    <script type="text/javascript">
+        $(function() {
+            // 0. 关闭JQuery的浏览器缓存
+            $.ajax({ cache: false });
+            // 1. 请求第一页的数据
+            loadPageList(1);
+            // 2. 注册btnSure的点击事件
+            $("#btnSure").click(function() {
+                DoModify();
+            });
+        });
+
+        // 根据页码 异步请求 数据
+        function loadPageList(pageIndex) {
+            $.getJSON("/Stu/List/" + pageIndex, null, function(jsonData) {
+                $("#tbList tr:gt(0)").remove();
+                $("#trTemp").tmpl(jsonData.Data.PageData).appendTo("#tbList");
+                //生成页码条
+                makePageBar(loadPageList, document.getElementById("pageBar"), jsonData.Data.PageIndex, jsonData.Data.PageCount, 2, jsonData.Data.RowCount);
+                // 点击每一个页码调用的对象
+            });
+        }
+
+        function DoDel(id) {
+            if (confirm("确定删除?")) {
+                return;
+            }
+            $.post("/Stu/Del?id=" + id, null, function(jsonObj) {
+                if (jsonObj.Statu === "Ok") {
+                    $.msgBox.showMsgOk(jsonObj.Msg, function() {
+                        loadPageList(1);
+                    });
+                } else if (jsonObj.Statu === "Error") {
+                    $.msgBox.showMsgErr(jsonObj.Msg);
+                }
+
+            }, "json");
+        }
+
+    </script>
+
+    @*table的body用JQuery加载*@
+    <script type="text/x-jquery-tmpl" id="trTemp">
+        <tr>
+            <td>${Id}</td>
+            <td>${Name}</td>
+            <td>${Class.CName}</td>
+            <td>${Gender}</td>
+            <td>
+                <a href="javascript:DoDel(${Id})">删</a> | <a href="javascript:void(0)" onclick="Modify('${Id}', this)">改</a> | <a href="@Url.Action("ModifyPage", "Stu")/${Id}">改(强)</a>
+            </td>
+        </tr>
+    </script>
+
+    @*function Modify(id, btnObj) {*@
+    <script type="text/javascript">
+        var $editingRow = null;
+
+        function Modify(id, btnObj) {
+            $.getJSON("/Stu/Get/" + id, null, function(jsonObj) {
+                if (jsonObj.Statu === "Ok") {
+                    $("#Id").val(jsonObj.Data.Id);
+                    $("#Name").val(jsonObj.Data.Name);
+                    $("#CId").val(jsonObj.Data.CId);
+                    //如果 数据为男
+                    if (jsonObj.Data.Gender === "男") {
+                        //先移除 女单选框的 选中状态
+                        $("#GenderF").removeAttr("checked");
+                        //再添加 男单选框的 选中状态
+                        $("#GenderM").attr("checked", "checked");
+                    } else {
+                        $("#GenderM").removeAttr("checked");
+                        $("#GenderF").attr("checked", "checked");
+                    }
+                    $("#tbData").css("display", "block");
+                    $editingRow = $(btnObj).parent().parent();
+                }
+            });
+        }
+    </script>
+
+    @*页码条 和 修改From 样式*@
+    <style type="text/css">
+        #pageBar {
+            margin: 10px auto;
+            width: 550px;
+            text-align: center;
+            border: 1px solid #0094ff;
+        }
+        #pageBar a {
+            padding: 2px 4px;
+            border: 1px solid #000;
+            background-color: #0094ff;
+            margin: 4px;
+            line-height: 32px;
+            color: #fff;
+            cursor: pointer;
+        }
+        #pageBar a:hover {
+            background-color: orange;
+        }
+        #tbData {
+            border: 1px solid #0094ff;
+            margin: 10px auto;
+            width: 500px;
+            padding: 5px;
+            display: none; /*不占茅坑不拉屎*/
+            /*visibility:hidden;*//*占着茅坑不拉屎*/
+        }
+        #tbData td {
+            border: 1px solid #0094ff;
+        }
+    </style>
+
+    @*确定修改, DoModify*@
+    <script type="text/javascript">
+        function DoModify() {
+            var s = $("#fData").serialize(); 
+            $.post("/Stu/Modify", s, function (jsonData) {
+                if (jsonData.Statu === "Ok") {
+                    var $tds = $editingRow.children("td");
+                    $tds[1].innerHTML = jsonData.Data.Name;
+                    $tds[2].innerHTML = $("#CId option[value = " + jsonData.Data.CId + "]").text();
+                    $tds[3].innerHTML = jsonData.Data.Gender;
+                    $editingRow = null;
+                    $("#tbData").css("display", "none");
+                }
+            }, "json");
+        }
+    </script>
+}
+
+<table id="tbList">
+    <tr>
+        <th>Id</th>
+        <th>姓名</th>
+        <th>班级</th>
+        <th>性别</th>
+        <th>操作</th>
+    </tr>
+</table>
+<div id="pageBar"></div>@*页码条*@
+@*修改的from*@
+<form id="fData">@*使用serialize()*@
+    <table id="tbData">
+        <tr>
+            <td>姓名：<input type="hidden" id="Id" name="Id" /></td>
+            <td><input id="Name" type="text" name="Name" /></td>
+        </tr>
+        <tr>
+            <td>班级：</td>
+            <td>
+                @Html.DropDownList("CId", ViewBag.SelList as IEnumerable<SelectListItem>)
+            </td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td>
+                <input type="radio" id="GenderM" name="Gender" value="男" />男
+                <input type="radio" id="GenderF" name="Gender" value="女" checked />女
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" id="btnSure" value="确 定" />
+                <input type="button" id="btnCancel" value="取 消" />
+            </td>
+        </tr>
+    </table>
+</form>

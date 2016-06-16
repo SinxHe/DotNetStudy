@@ -1,0 +1,67 @@
+﻿@model N32MODEL.ViewModel.LoginUser
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @Scripts.Render("~/MvcMinJQuery"); @*1. 生成浏览器缓存 2. 解决路径问题*@
+
+    @*<script src="~/Scripts/Heab-AjaxModel.js"></script>*@ @*已经在"~/MvcMinJQuery"中添加了*@
+    <script type="text/javascript">
+        function AjaxFormOnSuccess(jsonData) {
+            $.ProcessAjaxData(jsonData, function() {
+                window.location = jsonData.BackUrl;
+            });    // 调用我的拓展JQuery方法
+        }
+
+        function AjaxFormOnFailure(obj) {
+            alert("出现错误, 错误码: " + obj.status);
+        }
+    </script>
+    <style type="text/css">
+        #divAjaxFormMsg {
+            display: none; /*会重排*/
+            /*visibility: hidden;*/ /*不会重排*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Ajax.BeginForm(new AjaxOptions()
+    {
+        HttpMethod = "post",
+        OnSuccess = "AjaxFormOnSuccess",
+        OnFailure = "AjaxFormOnFailure",
+        LoadingElementId = "divAjaxFormMsg",
+
+    }))
+        {
+            <table>
+                <tr>
+                    <td>用户名: </td>
+                    <td>@Html.TextBoxFor(u => u.LoginName, new {Value = "Admin"})</td>
+                    <td>@Html.ValidationMessageFor(u => u.LoginName)</td>
+                </tr>
+                <tr>
+                    <td>密码: </td>
+                    <td>@Html.PasswordFor(u => u.Pwd, new {Value = "123123"})</td>
+                    <td>@Html.ValidationMessageFor(u => u.Pwd)</td>
+                </tr>
+                <tr>
+                    <td>@Html.CheckBoxFor(u => u.IsAllways)</td>
+                    <td colspan="2"><input type="submit" value="登陆" /></td>
+                </tr>
+            </table>
+            
+        }
+        <div id="divAjaxFormMsg">
+            <h2>登陆中...</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace N34NLog日志框架
+{
+    class NLogTest
+    {
+        static void Main(string[] args)
+        {
+            NLog.Logger logger =  NLog.LogManager.GetLogger("HeabLoggerName");
+            logger.Info("我是一个LoggerInfo!");
+        }
+    }
+}

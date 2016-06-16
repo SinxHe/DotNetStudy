@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        // window.onload: 整个Windows窗体加载完成之后触发的事件响应方法  - 晚
+        // document.ready: 整个页面文档加载完成之后触发的事件响应方法    - 早
+        window.onload = function() {
+            var btn = document.getElementById("btnGetDateTime");
+            btn.onclick = function() {
+                // 发送异步请求到后台请求后台时间
+
+                //      创建异步请求类XMLHttpRequest()
+                var xhr;
+                if (XMLHttpRequest) { // 如果浏览器支持这个对象
+                    xhr = new XMLHttpRequest();
+                } else { // 老版本的IE5, IE6
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+
+                //      打开一个跟后台的连接
+                //      请求方式, 地址, 异步(true)/同步
+                //      同步: 当前UI线程执行(卡死等结果) 异步: 另一个线程执行
+                xhr.open("GET", "N01返回时间.ashx", true);
+
+                // POST
+                // xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+
+                //      发送数据
+                xhr.send(); // POST: xhr.send(id=x&name=x)
+
+                //      监听异步请求状态的事件
+                xhr.onreadystatechange = function () {
+                    //0: 请求未初始化 
+                    //1: 服务器连接已建立 
+                    //2: 请求已接收 
+                    //3: 请求处理中 
+                    //4: 请求已完成，且响应已就绪 
+                    if (xhr.readyState == 4) {
+                        //200: "OK"
+                        //404: 未找到页面
+                        if (xhr.status == 200) {
+                            alert(xhr.responseText);
+                        }
+                    }
+                };
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" id="btnGetDateTime" value="获取服务器当前时间" />
+</body>
+</html>

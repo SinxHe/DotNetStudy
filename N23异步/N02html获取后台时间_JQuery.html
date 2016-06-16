@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnGetDateTime").click(function() {
+                // Json: {key:value,key2:value,key3:[12,4,{sss:33}]}
+
+                //$.get("N01返回时间.ashx", "传递的数据(字符串/Json)", function(data) {
+                //    alert(data);
+                //});
+
+                //$.post("N01返回时间.ashx", "传递的数据(字符串/Json)", function(data) {
+                //    alert(data);
+                //});
+
+                // 要求返回的数据是Json格式, 不符合data为空
+                //$.getJSON("N02返回Json.ashx", "传递的数据(字符串/Json)", function(data) {
+                //    alert(data.Data);
+                //});
+
+                // 通用方法
+                $.ajax({
+                    url: "N02返回Json.ashx",
+                    type: "post",   // 默认是get请求
+                    cache: false,   // 关闭缓存
+                    data: "id=22&sss=fff",
+                    dataType:"json",
+                    success: function(data) {
+                        alert(data.Data);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="JQuery异步获取后台时间" id="btnGetDateTime" />
+</body>
+</html>
