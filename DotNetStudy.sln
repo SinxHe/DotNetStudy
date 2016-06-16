@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N01正则表达式", "N01控制台\N01正则表达式.csproj", "{C4944EE5-6A41-4691-9369-1954B2671205}"
 EndProject
@@ -44,300 +44,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N17IIS服务器", "N17IIS服务器\N17IIS服务器.csproj", "{99C4569D-2110-42D7-92BB-D335CF907D0F}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "N18一般处理程序基础", "http://localhost:57058", "{A9CFB171-54B9-4A0D-9974-1AEFE6CBFAE2}"
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{429e36e4-9c59-4e1d-b40b-7173c919d16f}|Heab.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Debug.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_57058"
-		Release.AspNetCompiler.PhysicalPath = "N18一般处理程序基础\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "N18一般处理程序基础\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
@@ -459,6 +165,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N32IDAL", "N32IDAL\N32IDAL.csproj", "{19057EE1-9A21-462F-98C2-922EE9BA8F5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N33BootStrap", "N33BootStrap\N33BootStrap.csproj", "{184908EF-EB1C-4697-9EC8-813300E7F749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N34NLog日志框架", "N34NLog日志框架\N34NLog日志框架.csproj", "{4F9B6F90-7DAC-4A58-B35B-71FC4F26A159}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "日积月累", "日积月累", "{3C8B9212-D3FF-48C3-B9C8-360DDD59339E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N35SharpConfig配置文件处理", "N35SharpConfig配置文件处理\N35SharpConfig配置文件处理.csproj", "{D9CAE3DB-17AB-4F61-B839-01F7FFE95FC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -714,6 +426,14 @@ Global
 		{184908EF-EB1C-4697-9EC8-813300E7F749}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{184908EF-EB1C-4697-9EC8-813300E7F749}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{184908EF-EB1C-4697-9EC8-813300E7F749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9B6F90-7DAC-4A58-B35B-71FC4F26A159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9B6F90-7DAC-4A58-B35B-71FC4F26A159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9B6F90-7DAC-4A58-B35B-71FC4F26A159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9B6F90-7DAC-4A58-B35B-71FC4F26A159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9CAE3DB-17AB-4F61-B839-01F7FFE95FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9CAE3DB-17AB-4F61-B839-01F7FFE95FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9CAE3DB-17AB-4F61-B839-01F7FFE95FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9CAE3DB-17AB-4F61-B839-01F7FFE95FC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -783,5 +503,8 @@ Global
 		{60453B9B-1DCA-409E-A559-31DB9B09548C} = {6BE13B2E-04DE-456A-A48E-85826F6C13C6}
 		{E72EA241-1318-46F5-A587-58F9940AB7A8} = {6BE13B2E-04DE-456A-A48E-85826F6C13C6}
 		{19057EE1-9A21-462F-98C2-922EE9BA8F5A} = {E5B058DC-BBB2-4CAD-9DC8-313CD4B29C60}
+		{184908EF-EB1C-4697-9EC8-813300E7F749} = {3C8B9212-D3FF-48C3-B9C8-360DDD59339E}
+		{4F9B6F90-7DAC-4A58-B35B-71FC4F26A159} = {3C8B9212-D3FF-48C3-B9C8-360DDD59339E}
+		{D9CAE3DB-17AB-4F61-B839-01F7FFE95FC0} = {3C8B9212-D3FF-48C3-B9C8-360DDD59339E}
 	EndGlobalSection
 EndGlobal
